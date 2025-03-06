@@ -1,0 +1,15 @@
+aws_region           = "us-east-1"
+vpc_cidr             = "10.0.0.0/16"
+environment          = "development"
+public_subnets_cidr  = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+private_subnets_cidr = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+eks_cluster_name     = "dev-k8"
+eks_version          = "1.29"
+node_group_name      = "dev-k8-ng"
+desired_size         = 1
+min_size             = 1
+max_size             = 2
+ami_type             = "AL2_ARM_64"
+instance_types       = ["t4g.medium"]
+disk_size            = "30"
+key                  = "bharat"

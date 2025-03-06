@@ -1,0 +1,51 @@
+# Terraform state and backup files
+*.tfstate
+*.tfstate.backup
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform lock files
+.terraform.lock.hcl
+
+# Local Terraform directories
+.terraform/
+.terraform.d/
+
+# Ignore override files (local-only configurations)
+override.tf
+override.tf.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignore generated plan files
+*.tfplan
+
+# Ignore environment-specific files
+.env
+*.envrc
+
+# Ignore SSH keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore logs and debug files
+*.log
+debug.log
+
+# Ignore temporary files
+*.bak
+*.swp
+*.swo
+
+# Ignore Terraform provider caches
+.terraform/providers/
