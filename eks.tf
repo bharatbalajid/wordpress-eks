@@ -6,7 +6,7 @@ resource "aws_eks_cluster" "main" {
   vpc_config {
     subnet_ids              = flatten(concat([aws_subnet.public_subnet[*].id], [aws_subnet.private_subnet[*].id]))
     security_group_ids      = [aws_security_group.eks_cluster.id]
-    endpoint_public_access  = true
+    endpoint_public_access  = false
     endpoint_private_access = true
   }
   depends_on = [
